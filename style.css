@@ -6,6 +6,10 @@
 
 body {
   background-color: #f1f1f1;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 135%;
 }
 
 a {
@@ -42,7 +46,12 @@ ul {
   color: #fff;
   display: inline-block;
   text-align: center;
-  padding: 14px;
+  padding: 14px 16px;
+  transition: background-color 0.3s linear;
+}
+
+#nav li a:hover {
+  background-color: #111;
 }
 
 .tags li a {
@@ -67,6 +76,7 @@ ul {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   width: 100%;
+  transition: opacity 0.3s linear;
 }
 
 .blog-title {
@@ -76,6 +86,11 @@ ul {
 
 .blog-title a {
   color: #444;
+  transition: all 0.3s;
+}
+
+.blog-title a:hover {
+  color: #dd4453;
 }
 
 .blog-text {
@@ -86,7 +101,7 @@ ul {
 
 .date {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   right: 20px;
   color: #aaa;
 }
@@ -104,7 +119,72 @@ ul {
   cursor: pointer;
 }
 
+.btn:hover {
+  border-color: #363636;
+  background-color: #363636;
+}
+
 .blog-post-container {
   width: 75%;
   float: left;
+}
+
+.header {
+  border-bottom: 1px solid gray;
+  padding: 10px 0;
+  margin-bottom: 15px;
+}
+
+.other-posts {
+  padding-left: 20px;
+  width: 25%;
+  float: left;
+}
+
+.inner-other-posts {
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.box {
+  box-shadow: 0 2px 8px 2px rgb(20 23 28 / 15%);
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.share {
+  padding: 20px;
+}
+
+.share a {
+  color: gray;
+  opacity: 0.9;
+  text-decoration: none;
+  margin-right: 12px;
+  font-size: x-large;
+}
+
+.share a:hover {
+  opacity: 0.6;
+}
+
+#active {
+  background-color: #dd4453;
+}
+
+.author-box {
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding-top: 10px;
+}
+
+.author-box img {
+  border-radius: 50%;
+  float: left;
+}
+
+.author-text {
+  float: left;
+  margin-top: 50px;
+  margin-left: 20px;
 }
